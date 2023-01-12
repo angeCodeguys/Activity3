@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="myJScodes.js"></script>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			const string = 'Wd42P';
+
+			function count(string) {
+				const histogram = {};
+				for (let i = 0; i < string.length; i++) {
+					const ch = string[i];
+					if (!histogram[ch]) {
+						histogram[ch] = 0;
+					}
+					histogram[ch]++;
+				}
+				return histogram;
+			}
+			console.log(count('Wd42P'));
+		</script>
+	</body>
+</html>
